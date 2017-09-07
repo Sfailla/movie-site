@@ -1,0 +1,206 @@
+/*==================================================================*
+ *                        MOVIE INFO STYLING                        *
+ *==================================================================*/
+
+
+section#single-movie-view {
+    height: auto;
+    padding: 120px 0px;
+    background-image: url('../assets/bg-hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    width: 80%;
+    min-width: 350px;
+    padding: 50px 0px;
+    margin: 0px auto;
+    border-radius: 7px;
+    border: 2px solid #22B0C6;
+    background-color: #000000;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img img {
+    width: 220px;
+}
+
+.card-img {
+    margin-top: 20px;
+    align-self: center;  
+}
+
+.card-info {
+    color: #22B0C6; 
+  }
+
+button.delete {
+    width: 150px;
+    background-color: crimson;
+    color: white;
+    height: 25px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button.update {
+    width: 150px;
+    background-color: royalblue;
+    color: white;
+    height: 25px;
+    border-radius: 3px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.card-button-group {
+    text-align: center;
+    white-space: nowrap;    
+}
+
+#view-lead {
+    font-size: 40px;
+    font-weight: bold;
+    color: #22B0C6;
+    text-align: center;
+}
+
+.card-info p {
+    color: white;
+}
+
+
+/*==================================================================*
+ *                       UPDATE MOVIE STYLING                       *
+ *==================================================================*/
+
+
+ input {
+    width: 100%;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 2px;
+    outline: none;
+    border: 2px solid #22B0C6;
+    padding-left: 5px;
+    padding-right: 10px;
+    color: red;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 3px;
+    border: 2px solid #22B0C6;
+    font-size: 17px;
+    font-family: 'Roboto';
+}
+
+textarea::-webkit-input-placeholder { 
+    color: red;
+}
+
+select {
+    width: 100%;
+    height: 30px;
+    border: 2px solid #22B0C6;
+    border-radius: 2px;
+    font-size: 15px;
+    color: red;
+}
+
+.update-movie-container {
+    width: 80%;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.update-movie-container h1 {
+    text-align: center;
+}
+
+.form-wrapper {
+    width: calc(80% - 60px);
+    min-width: 350px;
+    padding: 25px 0px 50px 0px;
+    height: auto;
+    margin: 0 auto;
+    
+    border-radius: 10px;
+    border: 2px solid #22B0C6;
+    background-color: #000000;
+    color: #22B0C6;
+    font-weight: bold;
+}
+
+.is-closed {
+    display: none;
+}
+
+label {
+    font-size: 20px;
+}
+
+#center-text h1 {
+    text-align: center;
+}
+
+button#update-movie {
+    width: 150px;
+    height: 26px;
+    border-radius: 5px;
+    background-color: #22B0C6;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    margin: 15px auto;
+}
+
+button#delete {
+    width: 150px;
+    height: 26px;
+    border-radius: 5px;
+    background-color: crimson;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.button-wrap {
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .update-movie-container {
+        width: 100%;
+    }
+    .card-button-group {
+        text-align: center;
+    }
+    button#update-movie {
+        width: 130px;
+    }
+    button#delete {
+        width: 130px;
+    }
+}
+
+@media (min-width: 1304px) {
+    .card-button-group {
+        text-align: left;
+        white-space: nowrap;
+    }
+    .wrapper {
+        flex-wrap: nowrap;
+    }
+    .card-img {
+        padding-left: 20px;
+    }
+}

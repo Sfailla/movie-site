@@ -1,0 +1,60 @@
+/*========================================================================
+====                        GET MOVIES STYLING                          ==== 
+=========================================================================*/
+
+
+section#movies-content {
+    background-color: #1D5799;
+    background-image: url('https://s-media-cache-ak0.pinimg.com/originals/2d/4e/69/2d4e69ed0f45fdae444e51a012eb0a8e.jpg');
+    color: white;
+}
+
+.card {
+    width: 270px;
+    height: auto;
+    padding: 25px 15px;
+}
+
+.card-container {
+    height: 100px;
+    padding: 15px;
+    background-color: #333;
+    text-align: center;
+}
+
+.card-container a {
+    margin: 0 auto;
+}
+
+button.delete {
+    width: 150px;
+    background-color: crimson;
+    border: 1px solid crimson;
+    color: white;
+    height: 25px;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img.movies-img {
+    width: 100%;
+}
+
+.flex-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-item {
+    width: ;
+    text-align: -webkit-center;
+}
+
+@media (max-width: 700px) {
+    
+}

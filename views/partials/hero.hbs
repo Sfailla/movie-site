@@ -1,0 +1,27 @@
+<section id="hero">
+
+    <div class="grid">
+        <div class="grid-box">
+            <div class="hero-container">
+                <h1 id="section"> {{ title }}</h1>
+                    <p> {{ message }} </p>
+                    {{#if include}}
+                    <a href="/api/movies" type="button" id="getMovie">Get Movies</a>
+                    {{else }}
+                    <!-- Nothing -->                
+                    {{/if }}
+            </div>
+        </div>
+        <div class="grid-box right-box">
+            {{#if include}}
+            <img src="../assets/movie-posters.png" alt="movie img">
+            {{else if moviesPage}}
+            <img src="../assets/movie-title.png" class="dvd-img" alt="movie img">
+            {{else if addMoviePage }}
+            <img src="../assets/movie-strip.jpg" alt="movie img">
+            {{else }}
+            {{/if}}
+        </div>
+    </div>
+
+</section>

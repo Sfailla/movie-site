@@ -1,0 +1,73 @@
+/*========================================================================
+====                        GLOBAL  STYLING                          ==== 
+=========================================================================*/
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body { 
+    width: 100%;
+    min-width: 400px;    
+    font-family: 'Roboto';
+}
+
+.container {
+    width: 100%;
+    padding: 40px;
+}
+
+button {
+    margin-top: 10px;
+    color: white;
+}
+
+h1#section {
+    color: #22B0C6;
+}
+
+p {
+    font-family: 'Lato';
+}
+
+#center-text {
+    text-align: center;
+}
+
+a#getMovie,
+a#addMovie {
+    display: block;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #22B0C6;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+    margin: 15px auto;
+}
+
+button#addMovie {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #22B0C6;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 15px auto;
+}
+
+
+@media (max-width: 700px) {
+    h1#section {
+        text-align: center;
+    }
+}

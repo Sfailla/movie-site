@@ -1,0 +1,75 @@
+/*========================================================================
+====                      HERO SECTION STYLING                        ==== 
+=========================================================================*/
+
+section#hero {
+    height: auto;
+    min-height: 500px;
+    padding-top: 75px;
+    background-image: url('../assets/bg-hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.right-box {
+    text-align: center;
+}
+
+.right-box img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.dvd-img {
+    width: 500px;
+}
+
+section h3 {
+    padding-bottom: 15px;
+    color: #fff;
+}
+
+section h1#section  {
+    color: #22B0C6;
+    padding-bottom: 15px;
+}
+
+section#hero p {
+    margin-right: 10px;
+}
+
+.title-lead {
+    text-align: center;
+}
+
+.hero-container {
+    padding: 40px;
+    text-align: center;
+}
+
+
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    }
+    .right-box .dvd-img {
+        width: 100%;
+        max-width: 300px;
+        padding-bottom: 40px;
+    }
+    
+}

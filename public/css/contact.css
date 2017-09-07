@@ -1,0 +1,83 @@
+/*========================================================================
+====                      CONTACT SECTION STYLING                        ==== 
+=========================================================================*/
+
+
+section#contact {
+    background-color: #00142B;
+}
+
+section#contact h3 {
+    color: white;
+}
+
+#contact-break {
+    padding-top: 50px;  
+}
+
+span#contact-info {
+    color: #22B0C6;
+}
+
+.contact-info-container {
+    text-align: center;
+    overflow: hidden;
+}
+
+.contact-box-right {
+    margin: 0 auto;
+}
+
+.flex-contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.flex-box {
+    width: 50vw;
+    border-right: 2px solid white;
+}
+
+.flex-box:nth-child(2) {
+    border-right: none;
+}
+
+span {
+    word-wrap: nowrap;
+}
+
+#contact-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-nav-container {
+    font-size: 13px;
+}
+
+#contact-nav ul a {
+    color: #22B0C6;
+    font-weight: bold;
+}
+
+#contact-nav ul {
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    nav#contact-nav ul {
+        display: block;
+        padding: 0px 0px 15px 0px;
+        font-size: 17px;
+    }
+    nav#contact-nav {
+        text-align: center;
+    }
+    nav#contact-nav ul li {
+        padding-top: 10px;
+    }
+    nav#contact-nav ul li:nth-child(1) {
+        padding-top: 0;
+    }
+}

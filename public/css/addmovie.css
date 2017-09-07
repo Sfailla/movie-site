@@ -1,0 +1,85 @@
+/*========================================================================
+====                        ADD MOVIE STYLING                         ==== 
+=========================================================================*/
+
+
+section#add-movie {
+    padding: 100px 0px;
+    height: auto;
+    background-color: #000000;
+    color: #22B0C6;
+    font-weight: bold;
+    line-height: 2;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 2px;
+    outline: none;
+    border: 2px solid #22B0C6;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+textarea {
+    width: 100%;
+    border-radius: 3px;
+    border: 2px solid #22B0C6;
+    font-size: 17px;
+    font-family: 'Roboto';
+}
+select {
+    width: 100%;
+    height: 30px;
+    border: 2px solid #22B0C6;
+    border-radius: 2px;
+    font-size: 15px;
+}
+.addmovie-container {
+    width: 80%;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.addmovie-container h1 {
+    text-align: center;
+}
+
+.form-wrapper {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #22B0C6;
+}
+
+label {
+    font-size: 20px;
+}
+
+#center-text h1 {
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    input {
+        font-size: 13px;
+        height: 20px;
+    }
+    textarea {
+        font-size: 13px;
+        height: 60px;
+    }
+    select {
+        font-size: 13px;
+        height: 20px;
+    }
+    label {
+        font-size: 15px;
+    }
+    .addmovie-container {
+        width: 100%;
+    }
+}

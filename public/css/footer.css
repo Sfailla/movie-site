@@ -1,0 +1,17 @@
+/*========================================================================
+====                      FOOTER SECTION STYLING                        ==== 
+=========================================================================*/
+
+
+section#footer {   
+    background-color: #000;
+    
+}
+
+footer {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

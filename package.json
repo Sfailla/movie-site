@@ -1,0 +1,23 @@
+{
+  "name": "moviesite",
+  "version": "1.0.0",
+  "description": "Learning the backend with a movie site",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "steve failla",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.9",
+    "mongoose": "^4.11.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

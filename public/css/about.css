@@ -1,0 +1,74 @@
+
+/*========================================================================
+====                      ABOUT SECTION STYLING                       ==== 
+=========================================================================*/
+
+
+section#about {
+    height: auto;
+    background-color: #0A0909;
+    border-top: 2px solid black;
+    padding-top: 60px;
+    color: white;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+section#about p {
+    padding-top: 10px;
+    text-indent: 2em;
+}
+
+.grid-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 70px;
+    padding-bottom: 70px;
+}
+
+img.director-img {
+    width: 350;
+    height: 350;
+}
+
+.img-container {
+    padding: 40px;
+    text-align: center;
+}
+
+img.add-movie {
+    width: 100px;
+    height: 100px;
+}
+
+img.update-movie {
+    width: 80px;
+    height: 80px;
+    padding-bottom: 5px;
+}
+
+img.delete-movie {
+    width: 100px;
+    height: 100px;
+}
+/* fixes the uneven grid layout due to diff size in icons */
+.fix-p {
+    margin-top: 20px;
+}
+
+hr {
+    color: white;
+    border: 1px solid white;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+@media (max-width: 700px) {
+    .grid-about {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
