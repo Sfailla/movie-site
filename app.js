@@ -18,24 +18,29 @@ app.use(methodOverride('_method'));
 
 app.use(express.static(path.join(__dirname + '/public')));
 
-app.engine('hbs', exphbs({
-  extname:'hbs', 
-  defaultLayout:'main', 
-  partialsDir: path.join(__dirname + '/views/partials'), 
-  layoutsDir: path.join( __dirname + '/views/layouts')
-}));
+app.engine(
+	'hbs',
+	exphbs({
+		extname: 'hbs',
+		defaultLayout: 'main',
+		partialsDir: path.join(__dirname + '/views/partials'),
+		layoutsDir: path.join(__dirname + '/views/layouts')
+	})
+);
 
 //app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
-app.set('view engine', 'hbs'); 
-app.set('views', path.join(__dirname, "views")); 
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
 
 const config = require('./config');
 
-mongoose.connect(config.getDBConnection(), {
-  useMongoClient: true,
-  /* other options */
-});
 mongoose.Promise = global.Promise;
+mongoose
+	.connect(config.getDBConnection(), {
+		useMongoClient: true
+	})
+	.then(() => console.log('Mlab is connected...'))
+	.catch(err => console.error(err));
 
 const apiController = require('./controllers/apiController');
 
@@ -44,9 +49,8 @@ Movie = require('./models/movie');
 
 apiController(app);
 
-
 // Port is listening on ...
-app.listen(port, (err) => {
-  if (err) console.log(err);
-  console.log('Your server is running on port:' + port);
+app.listen(port, err => {
+	if (err) console.log(err);
+	console.log(`'Your server is running on port: ${port}`);
 });

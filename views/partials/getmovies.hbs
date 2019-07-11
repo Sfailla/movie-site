@@ -12,17 +12,17 @@
 
         <div class="flex-container">
             {{#each movies}}
-            <div class="flex-item">
-                <div class="card"><a href=" /api/movie/{{ id }} ">
-                    <img src=" {{ img_url }} " class="movies-img" alt=""></a>                                               
-                        <div class="card-container"> 
-                        <h3> {{ title }} </h3>
-                        <form action="/api/movies/{{ id }}?_method=DELETE" method="post"> 
-                        <button type="submit" class="delete">Delete</button>
-                        </form>
-                        </div>
-                </div>            
-            </div>
+                <div class="flex-item">
+                    <div class="card"><a href=" /api/movie/{{ id }} ">
+                        <img src=" {{ img_url }} " class="movies-img" alt=""></a>                                               
+                            <div class="card-container"> 
+                            <h3> {{ title }} </h3>
+                            <form action="/api/movies/{{ id }}?_method=DELETE" method="post"> 
+                            <button type="submit" class="delete">Delete</button>
+                            </form>
+                            </div>
+                    </div>            
+                </div>
             {{/each}}  
         </div>                
     </div>

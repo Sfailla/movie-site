@@ -6,15 +6,15 @@
         <div class="wrapper">
             <div class="card-img">
                 <img src="{{ img_url }}" class="img-card">
-            </div>
+            </div> 
             <div class="card-info">
                 <div class="container">
-                    <h1>Title</h1><p>{{ title }}</p> 
-                    <h2>Genre</h2><p>{{ genre }}</p>  
+                    <h1>Title</h1><p>{{ title }}</p>
+                    <h2>Genre</h2><p>{{ genre }}</p>
                     <h2>Description</h2><p>{{ description }}</p>
-                    <h2>Director</h2><p>{{ director }}</p>  
-                    <h2>Starring</h2><p>{{ starring }}</p>  
-                    <br>                        
+                    <h2>Director</h2><p>{{ director }}</p>
+                    <h2>Starring</h2><p>{{ starring }}</p>
+                    <br>
                 <div class="card-button-group">
                     <form id="delete-form" action="/api/movies/{{ id }}?_method=DELETE" method="post">
                     <button type="button" class="update">Update Movie Form</button>
@@ -23,7 +23,7 @@
                 </div>
                 </div>
             </div>
-        </div>                  
+        </div>
     </div>
 
     <div class="form-wrapper is-closed">
@@ -62,9 +62,9 @@
                 <input type="text" class="form-control" id="img_url" value="{{ img_url }}" name="img_url">
             </div>
             <div class="button-wrap">
-                <button type="submit" id="update-movie">Update Movie</button> 
-                <button type="button" class="update" id="delete">Cancel</button>     
-            </div>          
+                <button type="submit" id="update-movie">Update Movie</button>
+                <button type="button" class="update" id="delete">Cancel</button>
+            </div>
         </form>
       </div>
     </div>

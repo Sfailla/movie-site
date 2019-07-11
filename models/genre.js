@@ -21,7 +21,7 @@ module.exports.getGenres = (callback, limit) => {
 
 // Adding a Genre
 module.exports.addGenre = (genre, callback) => {
-  Genre.create(genre, callback)
+  Genre.create(genre, callback);
 }
 
 // Updating a Genre
