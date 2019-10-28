@@ -1,8 +1,6 @@
-const express = require('express');
-
 module.exports = app => {
 	// This is the route for the main page at localhost:3000
-	app.get('/', (req, res, next) => {
+	app.get('/', (req, res) => {
 		res.render('home', {
 			title: 'Welcome to My Movie Site',
 			message:
@@ -13,7 +11,10 @@ module.exports = app => {
 
 	// This is the View for Adding a Single Movie
 	app.get('/api/addMovie', (req, res) => {
-		res.render('add-movie', { title: 'Welcome to the Add Movies Page', addMoviePage: true });
+		res.render('add-movie', {
+			title: 'Welcome to the Add Movies Page',
+			addMoviePage: true
+		});
 	});
 
 	// This is the route for the Movies page
@@ -23,17 +24,20 @@ module.exports = app => {
 			res.render('movies', {
 				title: 'Welcome to the Movies Page',
 				moviesPage: true,
-				movies: movies
+				movies
 			});
 		});
 	});
 
 	// route for a Post request to add a movie to the db
 	app.post('/api/addMovie', (req, res) => {
-		const movie = req.body;
-		Movie.addMovie(movie, (err, movie) => {
-			if (err) console.log(err);
-			res.redirect('/api/movies');
+		const result = req.body;
+		console.log(result);
+		Movie.addMovie(result, (err, movie) => {
+			if (err) console.error(err);
+			res.status(200).render('movies', {
+				movies: movie
+			});
 		});
 	});
 
