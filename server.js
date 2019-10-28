@@ -12,7 +12,9 @@ const apiController = require('./controllers/apiController');
 const app = express();
 const port = process.env.PORT || 3000;
 
-//app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+Genre = require('./models/genre');
+Movie = require('./models/movie');
+
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -25,9 +27,6 @@ app.engine(
 		layoutsDir: path.join(__dirname + '/views/layouts')
 	})
 );
-
-Genre = require('./models/genre');
-Movie = require('./models/movie');
 
 app.use(cors());
 app.use(bodyParser.json());
