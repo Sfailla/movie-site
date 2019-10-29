@@ -11,11 +11,11 @@ window.onload = function() {
 
 	const updateMovieButton = document.querySelectorAll('.update');
 	for (let i = 0; i < updateMovieButton.length; i++) {
-		updateMovieButton[i].addEventListener('click', getMovies);
+		updateMovieButton[i].addEventListener('click', getUpdateForm);
 	}
 
 	function getMovies() {
-		fetch('api/movies', { method: 'GET' })
+		fetch('/', { method: 'GET' })
 			.then(res => res.json())
 			.then(doc => {
 				console.log(doc);
