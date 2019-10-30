@@ -10,7 +10,7 @@ module.exports = app => {
 	});
 
 	// This is the View for Adding a Single Movie
-	app.get('/api/addMovie', (req, res) => {
+	app.get('/api/add-movie', (req, res) => {
 		res.render('add-movie', {
 			title: 'Welcome to the Add Movies Page',
 			addMoviePage: true
@@ -30,7 +30,7 @@ module.exports = app => {
 	});
 
 	// route for a Post request to add a movie to the db
-	app.post('/api/addMovie', (req, res) => {
+	app.post('/api/add-movie', (req, res) => {
 		const result = req.body;
 		console.log(result);
 		Movie.addMovie(result, (err, movie) => {
@@ -67,6 +67,10 @@ module.exports = app => {
 			if (err) throw err;
 			res.redirect('/api/movies');
 		});
+	});
+
+	app.get('/api/search-movies', (req, res) => {
+		res.render('search-movies', { title: 'Movie Search' });
 	});
 
 	// ROUTES FOR GENRES
