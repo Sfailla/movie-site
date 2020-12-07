@@ -16,10 +16,11 @@
 		"express": "^4.15.4",
 		"express-handlebars": "^3.0.0",
 		"method-override": "^2.3.9",
-		"mongoose": "^4.11.7"
+		"mongoose": "^5.11.5"
 	},
 	"devDependencies": {
+		"dotenv": "^8.2.0",
 		"live-server": "^1.2.1",
-		"nodemon": "^1.11.0"
+		"nodemon": "^2.0.6"
 	}
 }
